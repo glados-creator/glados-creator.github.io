@@ -1,0 +1,19 @@
+{
+    "name": "portfolio-ct",
+    "dockerComposeFile": "../compose.yaml",
+    "service": "dev",
+    "workspaceFolder": "/portfolio-ct",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Vue.volar",
+                "rust-lang.rust-analyzer",
+                "oven.bun-vscode"
+            ]
+        }
+    },
+    "forwardPorts": [
+        5173
+    ],
+    "postCreateCommand": "bun install"
+}

@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: ../frontend
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/portfolio-ct:cached
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    command: sleep infinity
+    environment:
+      - NODE_ENV=development

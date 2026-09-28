@@ -2,21 +2,30 @@
   "name": "example-basic",
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "start": "node .output/server/index.mjs",
-    "preview": "vite preview"
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write 'src/**/*.{ts,tsx,css,scss}'"
   },
   "dependencies": {
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^1.0.0",
     "@solidjs/start": "^2.0.0",
+    "nitro": "^3.0.260610-beta",
     "solid-js": "^1.9.14",
-    "vite": "^8.0.0",
-    "nitro": "^3.0.260610-beta"
+    "solid-styled-components": "^0.28.5",
+    "vite": "^8.0.0"
   },
   "engines": {
     "node": ">=24"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.70.1",
+    "@typescript-eslint/parser": "^8.70.1",
+    "eslint": "^10.11.0",
+    "prettier": "^3.9.9",
+    "tailwindcss": "^4.3.3"
+  }
 }

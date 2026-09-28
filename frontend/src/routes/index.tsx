@@ -1,18 +1,18 @@
-import { Title } from "@solidjs/meta";
-import Counter from "~/components/Counter";
+import { A } from "@solidjs/router";
+import { styled } from "solid-styled-components";
 
-export default function Home() {
+const Title = styled("h1")`
+  color: #333;
+  font-size: 2rem;
+`;
+
+export default function Page1() {
   return (
-    <main>
-      <Title>Hello World</Title>
-      <h1>Hello world!</h1>
-      <Counter />
+    <main style={{ padding: "2rem", "font-family": "sans-serif" }}>
+      <h1>Page 1 — Hello World</h1>
+      <Title>Page 1 — Hello World</Title>
       <p>
-        Visit{" "}
-        <a href="https://start.solidjs.com" target="_blank">
-          start.solidjs.com
-        </a>{" "}
-        to learn how to build SolidStart apps.
+        <A href="/page2">Aller vers la page 2</A>
       </p>
     </main>
   );

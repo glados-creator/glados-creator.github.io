@@ -1,0 +1,21 @@
+# Build
+FROM oven/bun:1-slim AS build
+
+WORKDIR /portfolio-ct
+
+COPY package.json bun.lock ./
+RUN bun install --frozen-lockfile
+
+COPY . .
+
+RUN bun run build
+
+
+# Runtime
+FROM nginx:alpine
+
+COPY --from=build /portfolio-ct/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

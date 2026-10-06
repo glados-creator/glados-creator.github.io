@@ -1,0 +1,11 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    working_dir: /portfolio-ct
+    volumes:
+      - .:/portfolio-ct
+    ports:
+      - "5173:5173"
+    command: sleep infinity

@@ -25,12 +25,8 @@ const links = [
 
 <template>
   <section class="mx-auto max-w-3xl px-6 py-24 md:py-32">
-    <p class="font-mono text-xs font-medium tracking-[0.14em] text-indigo-400 uppercase">
-      Contact
-    </p>
-    <h1 class="mt-3 text-3xl font-extrabold tracking-tight md:text-5xl">
-      Travaillons ensemble.
-    </h1>
+    <p class="font-mono text-xs font-medium tracking-[0.14em] text-indigo-400 uppercase">Contact</p>
+    <h1 class="mt-3 text-3xl font-extrabold tracking-tight md:text-5xl">Travaillons ensemble.</h1>
     <p class="mt-6 max-w-lg text-zinc-400">
       Je recherche un <strong class="font-semibold text-zinc-200">stage de 16 semaines</strong>
       à partir d'octobre 2026. N'hésitez pas à me contacter pour discuter d'une opportunité.

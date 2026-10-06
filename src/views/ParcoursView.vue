@@ -137,9 +137,7 @@ const education = [
               {{ exp.period }}
             </span>
           </div>
-          <p class="mt-1 text-sm font-semibold text-indigo-400">
-            {{ exp.org }} · {{ exp.type }}
-          </p>
+          <p class="mt-1 text-sm font-semibold text-indigo-400">{{ exp.org }} · {{ exp.type }}</p>
           <ul class="mt-4 space-y-2">
             <li
               v-for="b in exp.bullets"

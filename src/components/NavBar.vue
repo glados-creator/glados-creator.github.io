@@ -7,9 +7,7 @@ const links = [
 </script>
 
 <template>
-  <header
-    class="sticky top-0 z-50 border-b border-zinc-800/70 bg-zinc-950/80 backdrop-blur-md"
-  >
+  <header class="sticky top-0 z-50 border-b border-zinc-800/70 bg-zinc-950/80 backdrop-blur-md">
     <nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
       <RouterLink to="/" class="flex items-center gap-2.5 text-sm font-bold tracking-tight">
         <span

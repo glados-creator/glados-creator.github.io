@@ -17,8 +17,8 @@
     </h1>
 
     <p class="mt-8 max-w-xl text-zinc-400 md:text-lg">
-      Étudiant en <strong class="font-semibold text-zinc-200">BUT 3 Informatique</strong> à
-      l'IUT d'Orléans. Je recherche un
+      Étudiant en <strong class="font-semibold text-zinc-200">BUT 3 Informatique</strong> à l'IUT
+      d'Orléans. Je recherche un
       <strong class="font-semibold text-zinc-200">stage de 16 semaines</strong> en développement
       d'applications.
     </p>
